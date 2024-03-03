@@ -1,0 +1,439 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #050505;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.home{
+    display: flex;
+    background: url("images/background1.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+	margin-top: 150px;
+	margin-left: 200px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 197px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin-left: 200px;
+}
+
+
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+	margin-left: 200px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+  position: relative;
+  margin-top: -75px;
+  background-image: url('images/background2.jpg');
+  background-size: cover; 
+  background-position: center;
+}
+
+
+.form_box {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #b4b4b4;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box; 
+}
+
+.input-row {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.form_box input:not([type="submit"]),
+.form_box textarea,
+.form_box select {
+  width: 100%;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: gray;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box; /* Add this property */
+}
+
+.form_box textarea {
+  height: 70px;
+}
+
+.check_label {
+  padding-left: 25px;
+}
+
+.form_box input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  background: #075680;
+}
+
+.form_box input[type="submit"]:hover {
+  background: #000;
+}
+.title{
+	  font-size: 50px;
+	  color: #fff;
+}
+
+.title1{
+	  color: crimson;
+}
+
+.portfolio-image {
+    width: 100px; 
+    height: auto;
+	display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 100px; 
+}
+
+.portfolio-item {
+  
+}
+
+
+.error {
+  display: none;
+  font-size: 14px;
+  color: red;
+}
+
+.logo img {
+  max-width: 20%;
+  height: auto;
+}
+
+nav {
+  background-color: crimson; 
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center; 
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff; 
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+nav ul li.menu-toggle {
+  margin-left: auto; 
+}
+
+nav ul li.menu-toggle label {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-text {
+  font-size: 14px;
+}
+
+.portfolio-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+main {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media img {
+  height: 30px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-info p {
+  margin: 0;
+  color: #777;
+  font-size: 16px;
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: #777;
+}
+
+.footer-info a:hover {
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  text-align: center; 
+}
+
+.grid-item p {
+  margin-top: 5px; 
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  input[type="checkbox"]:checked ~ nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+  .logo img {
+    max-width: 150px; 
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+ .form_box {
+    padding: 20px;
+  }
+
+  .form_box input:not([type="submit"]),
+  .form_box textarea,
+  .form_box select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form_box input[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .error {
+    font-size: 12px;
+  }
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.card {
+    
+}
+
+.box {
+   
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+img {
+    width: 100%; 
+    height: auto; 
+}
+
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+#text4 {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  border-right: 2px solid #000;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(30) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+
+.home2{
+    display: flex;
+    background: url("images/background3.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}

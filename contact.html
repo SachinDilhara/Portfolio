@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+         <header>
+  <div class="header-bg"></div>
+    <div class="logo">
+      <img src="images\logo.png" alt="Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle">&#9776;</label>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section class="home2" id="home">
+    <div class="home-content" style="max-width: 800px; margin: 0 auto;">
+        <div style="display: flex;">
+            <div style="flex: 1; text-align: left; margin-top: 100px;">
+                <h2 style="color: Crimson;">Contact Information</h2>
+                <p style="color: white;">Telephone: 0765866941</p>
+                <p style="color: white;">Email: Sachind1029@gmail.com</p>
+                <p style="color: white;">Address: 136, Sahanapura, Ballapitiya, Horana</p>
+            </div>
+            <div style="flex: 1; text-align: right;">
+                <h2 style="color: Crimson;">Contact Us</h2>
+                <div class="container">
+                    <form name="custom_form" onsubmit="return validForm()" style="font-size: 24px; text-align: left;">
+                        <div class="form_box">
+                            <div class="input_row">
+                                <input type="text" placeholder="Name*" name="name" style="width: 100%; padding: 20px; font-size: inherit;">
+                                <span class="error">Name is required</span>
+                            </div>
+                            <div class="input_row">
+                                <input type="text" placeholder="E-mail*" name="email" style="width: 100%; padding: 20px; font-size: inherit;">
+                                <span class="error">Email is required</span>
+                            </div>
+                            <div class="input_row">
+                                <input type="text" placeholder="Tele-Number*" name="number" style="width: 100%; padding: 20px; font-size: inherit;">
+                                <span class="error">Number is required</span>
+                            </div>
+                            <div class="input_row">
+                                <textarea placeholder="Message" name="message" style="width: 100%; padding: 20px; font-size: inherit;"></textarea>
+                                <span class="error">Please Enter Your Message</span>
+                            </div>
+                            <div class="input_row">
+                                <input type="submit" value="Submit" style="width: 100%; padding: 20px;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="social-media">
+      <a href="https://web.facebook.com"><img src="images/social2.png" alt="FB"></a>
+      <a href="https://www.instagram.com/"><img src="images/social4.png" alt="IN"></a>
+      <a href="https://www.github.com/SachinDilhara"><img src="images/social3.png" alt="TW"></a>
+      <a href="https://www.linkedin.com/in/sachin-dilhara-44ab0521b/"><img src="images/social1.png" alt="WA"></a>
+    </div>
+    <p style="color: crimson;">COPYRIGHT © 2024 Cryton</p>
+  </footer>
+
+	</body>
